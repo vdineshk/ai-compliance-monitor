@@ -1,0 +1,11 @@
+name = "ai-compliance-monitor"
+main = "src/index.ts"
+compatibility_date = "2024-12-01"
+
+# D1 Database binding - you'll need to create this first:
+# npx wrangler d1 create ai-compliance-monitor-db
+# Then paste the database_id below
+[[d1_databases]]
+binding = "DB"
+database_name = "ai-compliance-monitor-db"
+database_id = "547682e5-14b7-4e11-a949-33109ea85348"

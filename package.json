@@ -1,0 +1,21 @@
+{
+  "name": "ai-compliance-monitor",
+  "version": "1.0.0",
+  "description": "AI Agent Compliance Monitor - Structured regulatory intelligence for AI agents operating across jurisdictions",
+  "private": true,
+  "scripts": {
+    "dev": "wrangler dev",
+    "deploy": "wrangler deploy",
+    "deploy:dry": "wrangler deploy --dry-run",
+    "db:create": "wrangler d1 create ai-compliance-monitor-db",
+    "db:migrate:local": "wrangler d1 migrations apply ai-compliance-monitor-db --local",
+    "db:migrate:remote": "wrangler d1 migrations apply ai-compliance-monitor-db --remote",
+    "db:seed:local": "wrangler d1 execute ai-compliance-monitor-db --local --file=./migrations/0002_seed_data.sql",
+    "db:seed:remote": "wrangler d1 execute ai-compliance-monitor-db --remote --file=./migrations/0002_seed_data.sql"
+  },
+  "devDependencies": {
+    "wrangler": "^3.0.0",
+    "typescript": "^5.0.0",
+    "@cloudflare/workers-types": "^4.0.0"
+  }
+}
