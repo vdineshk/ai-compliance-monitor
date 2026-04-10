@@ -1,0 +1,16 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.vdineshk/ai-compliance-monitor",
+  "description": "Regulatory intelligence for AI agents across jurisdictions",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/vdineshk/ai-compliance-monitor",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://ai-compliance-monitor.sgdata.workers.dev/mcp"
+    }
+  ]
+}
